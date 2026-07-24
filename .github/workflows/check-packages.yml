@@ -42,6 +42,7 @@ jobs:
       - uses: actions/checkout@v6
       - name: Set up Homebrew Tap
         run: |
+          brew trust ${{ github.repository_owner }}/repo
           brew update-reset "$(brew --repository)"
           TAP_BASE=$(brew --taps)/${{ github.repository_owner }}
           mkdir -vp $TAP_BASE
