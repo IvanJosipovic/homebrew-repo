@@ -66,6 +66,9 @@ jobs:
 
   # Status check that is required in branch protection rules.
   final-status:
+    permissions:
+      contents: write
+      pull-requests: write
     needs:
       - auto-bump
       - changed-packages
