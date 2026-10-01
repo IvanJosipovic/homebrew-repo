@@ -1,9 +1,9 @@
 cask "kubeui" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.2.0"
-  sha256 arm:   "5afa31b1f2bd963f84cacc025f2b0f3b187d3f5ef2cd147576c7a1b5bf7cf450",
-         intel: "75beaf0b6cca587755e63d5041c4ae2edb5b24d9b8cb2dba66a3efd2cf569897"
+  version "1.4.2"
+  sha256 arm:   "57b1742ab86f62590786e361edb0854ecfc87d87469af5d9ecf89e05aa7a3557",
+         intel: "ce37a73004e86ea0bbb0781b510b85aaf8bd9439e810654819ba3327e024daa2"
 
   url "https://github.com/IvanJosipovic/KubeUI/releases/download/v#{version}/KubeUI-osx-#{arch}-Portable.zip"
   name "KubeUI"
